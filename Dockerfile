@@ -26,6 +26,7 @@ RUN mkdir -p /scripts /usr/share/fonts/opentype/noto /usr/share/tesseract-ocr /c
 # Copy necessary files
 COPY ./scripts/* /scripts/
 COPY src/main/resources/static/fonts/*.ttf /usr/share/fonts/opentype/noto/
+COPY src/main/resources/static/fonts/*.otf /usr/share/fonts/opentype/noto/
 COPY build/libs/*.jar app.jar
 
 # Set font cache and permissions
